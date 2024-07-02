@@ -3,8 +3,7 @@
 Abstract text summarization involves generating a concise and coherent summary that captures the core ideas and essential points of a longer text. Unlike extractive summarization, which selects and concatenates sentences or phrases directly from the source document, abstract summarization creates new sentences that convey the main information in a more fluid and readable manner. This process can be particularly challenging as it requires a deeper understanding of the content, context, and nuances of the original text.
 </p>
 <h2>Live in HuggingFace</h2>
-<a href="https://huggingface.co/spaces/Bikas0/Abstract-Text-Summarizer">![Uploading hf.png…]()
-Live Demo in HuggingFace</a>
+<a href="https://huggingface.co/spaces/Bikas0/Abstract-Text-Summarizer">Live Demo in 🤗HuggingFace</a>
 <h3>Table of Contents</h3>
 <ul>
     <li>Installation</li>
