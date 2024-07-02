@@ -1,5 +1,5 @@
 <h3>Text Summarization</h3>
-This repository contains a Jupyter Notebook for performing text summarization using transformer models. The notebook leverages the transformers library from Hugging Face along with various other NLP tools.<br>
+Abstract text summarization involves generating a concise and coherent summary that captures the core ideas and essential points of a longer text. Unlike extractive summarization, which selects and concatenates sentences or phrases directly from the source document, abstract summarization creates new sentences that convey the main information in a more fluid and readable manner. This process can be particularly challenging as it requires a deeper understanding of the content, context, and nuances of the original text.
 <h3>Table of Contents</h3>
 <ul>
     <li>Installation</li>
@@ -62,6 +62,7 @@ The notebook uses a pre-trained transformer model for sequence-to-sequence learn
   <li>Trainer</li>
 </ul>
 <h3>Training Loss</h3>
+
 ![Training and Validation Loss](https://github.com/Bikas0/Text-Summarization/assets/66817101/ae1daab4-43c7-4cb9-abc1-8fd4371baabb)
 
 The graph depicts the training and validation loss over the course of training a machine learning model. Understanding this graph is crucial for diagnosing the performance and learning behavior of the model.
@@ -84,6 +85,7 @@ Evaluation metrics used in this notebook include:<br>
 These metrics are used to assess the quality of the generated summaries.
 <h3>ROUGE</h3>
 ROUGE (Recall-Oriented Understudy for Gisting Evaluation) is a set of metrics used for evaluating automatic summarization and machine translation models. It compares the overlap between the words, phrases, and sequences in the generated summary and a set of reference summaries (usually human-written). <br>
+
 ![rouge_scores](https://github.com/Bikas0/Text-Summarization/assets/66817101/abae47bc-9163-4fe5-90cd-1a016f3f97be)
 
 <h3>Results</h3>
