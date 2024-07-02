@@ -14,7 +14,8 @@ This repository contains a Jupyter Notebook for performing text summarization us
 </ul>
 
 <h3>Installation</h3>
-Before running the notebook, ensure that you have the following libraries installed:<br>
+Before running the notebook, ensure that you have the following libraries installed: <br>
+
 ```bash
 pip install accelerate -U
 pip install transformers[sentencepiece] datasets sacrebleu rouge_score py7zr
@@ -30,19 +31,22 @@ pip install transformers[sentencepiece] datasets sacrebleu rouge_score py7zr
 </ul>
 
 <h3>Dataset</h3>
-The dataset used in this notebook is stored in a CSV file located on Google Drive. It is loaded into the notebook with the following command:<br>
+The dataset used in this notebook is stored in a CSV file located on Google Drive. It is loaded into the notebook with the following command: <br>
+
 ```bash
 dataset = pd.read_csv("/content/drive/MyDrive/summary/Datasets.csv")
 dataset.rename(columns={'Task Description': 'dialogue', 'Summary': 'summary'}, inplace=True)
 ```
 <h3>Preprocessing</h3>
-Preprocessing steps include:<br>
+Preprocessing steps include: <br>
+
 <ul>
   <li>Tokenization</li>
   <li>Lemmatization</li>
   <li>Stopwords removal</li>
 </ul>
-The nltk library is used for these preprocessing tasks. Ensure the necessary NLTK packages are downloaded:
+The nltk library is used for these preprocessing tasks. Ensure the necessary NLTK packages are downloaded: <br>
+
 ```bash
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -64,10 +68,10 @@ The graph depicts the training and validation loss over the course of training a
 
 <h5>Key Components of the Graph</h5>
 <ul>
-  <li>X-axis (Steps):</li> Represents the number of training iterations or steps.
-  <li>Y-axis (Loss):</li> Represents the loss value, which is a measure of how well the model's predictions match the target values.
-  <li>Training Loss (Blue Line): </li>Training Loss (Blue Line): Indicates the error on the training dataset. It is the loss calculated on the same data that the model was trained on.
-  <li>Validation Loss (Red Line): </li>Indicates the error on the validation dataset. It is the loss calculated on data that was not used for training but for validating the model's performance.
+  <li>X-axis (Steps): Represents the number of training iterations or steps.</li>
+  <li>Y-axis (Loss): Represents the loss value, which is a measure of how well the model's predictions match the target values.</li>
+  <li>Training Loss (Blue Line): Training Loss (Blue Line): Indicates the error on the training dataset. It is the loss calculated on the same data that the model was trained on.</li>
+  <li>Validation Loss (Red Line): Indicates the error on the validation dataset. It is the loss calculated on data that was not used for training but for validating the model's performance.</li>
 </ul>
 
 <h3>Evaluation</h3>
@@ -79,7 +83,7 @@ Evaluation metrics used in this notebook include:<br>
 </ul>
 These metrics are used to assess the quality of the generated summaries.
 <h3>ROUGE</h3>
-ROUGE (Recall-Oriented Understudy for Gisting Evaluation) is a set of metrics used for evaluating automatic summarization and machine translation models. It compares the overlap between the words, phrases, and sequences in the generated summary and a set of reference summaries (usually human-written). 
+ROUGE (Recall-Oriented Understudy for Gisting Evaluation) is a set of metrics used for evaluating automatic summarization and machine translation models. It compares the overlap between the words, phrases, and sequences in the generated summary and a set of reference summaries (usually human-written). <br>
 ![rouge_scores](https://github.com/Bikas0/Text-Summarization/assets/66817101/abae47bc-9163-4fe5-90cd-1a016f3f97be)
 
 <h3>Results</h3>
